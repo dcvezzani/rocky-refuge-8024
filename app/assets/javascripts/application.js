@@ -12,12 +12,19 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require underscore
+//= require backbone
+//= require backbone_rails_sync
+//= require backbone_datalink
+//= require backbone/clf004
+//
 //= require_tree .
 //
 // THIS MUST GO LAST
 //= require ../bootstrap/js/bootstrap.min
 //= require ../bootstrap_wizard/prettify
 //= require ../bootstrap_wizard/jquery.bootstrap.wizard
+//= require ../jquery.ui.theme.lightness/js/jquery-ui-1.8.22.custom.min
 
 // void() stopped working?!
 function xvoid(){}
