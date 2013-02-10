@@ -35,7 +35,7 @@ Clf004::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  config.action_mailer.default_url_options = { :host => 'localhost:3672' }
+  config.action_mailer.default_url_options = { :host => 'localhost:3678' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true

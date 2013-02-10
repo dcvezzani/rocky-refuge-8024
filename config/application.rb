@@ -89,5 +89,6 @@ module Clf004
     config.assets.initialize_on_precompile = false
 
     #config.assets.precompile += ['application-backbone.js']
+    config.assets.precompile += ['portal.css']
   end
 end

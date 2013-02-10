@@ -1,0 +1,32 @@
+  .hotspot{
+    border: 1px dashed yellow;
+    opacity: 0.5;
+  }
+
+  .hotspot-dark{
+    border: 1px dashed blue;
+  }
+  
+  .new-hotspots .hotspot{
+    background-color: yellow; 
+  }
+
+  .new-hotspots div{
+    position: absolute; 
+  }
+  .new-hotspot{
+    height: 4em;
+    width: 150px;
+  }
+
+  .active-hotspots div a{
+    display: none; 
+  }
+  .active-hotspots div:hover{
+    cursor: pointer;
+  }
+
+  .hotspot-zone{
+    position: relative; 
+  }
+  

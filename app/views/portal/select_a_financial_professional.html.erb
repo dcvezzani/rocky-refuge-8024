@@ -1,0 +1,30 @@
+<style type="text/css">
+#select-a-financial-professional{ position: absolute; left: 798px; top: 564px; width: 165px; height: 41px; }
+</style>
+
+
+
+<%= image_tag "/assets/mock/select-a-financial-professional.png" %>
+
+
+
+<!-- declare hotspots -->
+<!-- 
+  1. place new div in '#new-hotspots', with or without an enclosed anchor tag
+  2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document (or layout) in a script block
+  3. copy resulting style from console.log (e.g., in FireBug)
+  4. paste in style block at the top
+  5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
+-->
+<div class="hotspots">
+  <div class="new-hotspots">
+  </div>
+
+  <div class="active-hotspots">
+    <div id="select-a-financial-professional" class="hotspot-dark"><%= link_to "select-a-financial-professional", send_an_email_path %></div>
+  </div>
+</div>
+<!-- /declare hotspots -->
+
+
+

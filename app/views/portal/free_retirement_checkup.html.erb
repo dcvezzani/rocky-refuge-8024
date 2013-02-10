@@ -1,0 +1,30 @@
+<style type="text/css">
+#schedule-initial-interview{ position: absolute; left: 801px; top: 552px; width: 132px; height: 62px; }
+</style>
+
+
+
+<%= image_tag "/assets/mock/order-your-free-retirement-checkup.png" %>
+
+
+
+<!-- declare hotspots -->
+<!-- 
+  1. place new div in '#new-hotspots', with or without an enclosed anchor tag
+  2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document (or layout) in a script block
+  3. copy resulting style from console.log (e.g., in FireBug)
+  4. paste in style block at the top
+  5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
+-->
+<div class="hotspots">
+  <div class="new-hotspots">
+  </div>
+
+  <div class="active-hotspots">
+    <div id="schedule-initial-interview" class="hotspot-dark"><%= link_to "schedule-initial-interview", select_a_financial_professional_path %></div>
+  </div>
+</div>
+<!-- /declare hotspots -->
+
+
+

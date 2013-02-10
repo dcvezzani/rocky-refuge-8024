@@ -1,0 +1,84 @@
+  #page-outer-wrapper{
+    margin-top: 3em;
+
+    #page{
+      margin: 0 auto;
+      width: 1000px;
+      position: relative; 
+    }
+
+    #page .header {
+      color: white;
+      margin-bottom: 1em;
+      float: left;
+      width: 100%;
+    }  
+
+    #page .header h3{
+      width: 48%;
+      float: left;
+    }
+
+    #page .header ul.audiences{
+      width: 48%;
+      float: right;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    #page .header ul.audiences li{
+      float: left; 
+      display: inline-block;
+    }
+
+    #page .header ul.audiences li{
+      padding: 0;
+      margin: 0;
+    }
+    #page .header ul.audiences li + li{
+      margin-left: 5em;
+    }
+
+    .columns{
+      margin-top: 2em;
+    }
+    .col{
+      float: left; 
+    }
+    .col_1{
+      width: 700px;
+    }
+    .col_2{
+      width: 300px;
+    }
+    .col img{
+      margin-top: 0;
+    }
+    .col div + img, 
+    .col img + img{
+      margin-top: 3px;
+    }
+
+    .instructions{
+      background: url('/assets/mock/post-it-note.png') no-repeat white;
+      height: 330px;
+      clear: both; 
+      padding: 1em;
+      padding-top: 120px;
+      padding-left: 75px;
+      font-family: 'Indie Flower', cursive;
+      font-size: 14pt;
+    }
+
+    .instructions ul{
+      margin-top: 1em; 
+    }
+
+    .instructions ul li{
+      margin-top: 0;
+    }
+    .instructions ul li + li{
+      margin-top: 0.5em;
+    }
+  }
+

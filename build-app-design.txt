@@ -23,6 +23,9 @@ bundle exec rake db:migrate db:migrate:status
 
 
 
+bundle install
+bundle install --binstubs
+./bin/rails g backbone:install
 
 
 
