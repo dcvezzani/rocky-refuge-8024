@@ -42,9 +42,9 @@ function register_hotspots(){
   });
 
 
-    <ul class="hotspot-enabled" data-image="/assets/mock/triple-play.png">
-      <li data-title="triple-play" data-id="view-triple-play-directory" data-mode="active" data-dark-background="false"><%= view_triple_play_directory_path %></li>
-    </ul>
+    // <ul class="hotspot-enabled" data-image="/assets/mock/triple-play.png">
+    //   <li data-title="triple-play" data-id="view-triple-play-directory" data-mode="active" data-dark-background="false"><%= view_triple_play_directory_path %></li>
+    // </ul>
   
 
   $(".hotspots div div").addClass("hotspot");
