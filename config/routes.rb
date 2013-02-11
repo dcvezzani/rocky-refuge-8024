@@ -10,7 +10,11 @@ Clf004::Application.routes.draw do
   get "portal/register_for_my401k_plan_portal", as: :register_for_my401k_plan_portal
   get "portal/enter_my401k_plan_portal", as: :enter_my401k_plan_portal
   get "portal/enter_e_money_portal", as: :enter_e_money_portal
+
   get "portal/better_organize_your_financial_life", as: :better_organize_your_financial_life
+  get "portal/better_organize_your_financial_life_security", as: :better_organize_your_financial_life_security
+  get "portal/better_organize_your_financial_life_test_drive", as: :better_organize_your_financial_life_test_drive
+
   get "portal/log_in_for_existing_users", as: :log_in_for_existing_users
   get "portal/fast_start_support", as: :fast_start_support
   get "portal/log_in_to_access_e_money", as: :log_in_to_access_e_money

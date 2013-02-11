@@ -1,0 +1,34 @@
+<style type="text/css">
+#log-in-to-access-e-money{ position: absolute; left: 290px; top: 642px; width: 217px; height: 54px; }
+#fast-start-support{ position: absolute; left: 565px; top: 497px; width: 324px; height: 30px; }
+#log-in-for-existing-users{ position: absolute; left: 565px; top: 456px; width: 325px; height: 30px; }
+</style>
+
+
+
+<%= image_tag "/assets/mock/better-organize-your-financial-life-test-drive.png" %>
+
+
+
+<!-- declare hotspots -->
+<!-- 
+  1. place new div in '#new-hotspots', with or without an enclosed anchor tag
+  2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document (or layout) in a script block
+  3. copy resulting style from console.log (e.g., in FireBug)
+  4. paste in style block at the top
+  5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
+-->
+<div class="hotspots">
+  <div class="new-hotspots">
+  </div>
+
+  <div class="active-hotspots">
+    <div id="log-in-for-existing-users" class="hotspot-dark"><%= link_to "log-in-for-existing-users", fast_start_support_path %></div>
+    <div id="fast-start-support" class="hotspot-dark"><%= link_to "fast-start-support", enter_e_money_portal_path %></div>
+    <div id="log-in-to-access-e-money" class="hotspot-dark"><%= link_to "log-in-to-access-e-money", log_in_to_access_e_money_path %></div>
+  </div>
+</div>
+<!-- /declare hotspots -->
+
+
+
