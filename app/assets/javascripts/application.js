@@ -25,6 +25,7 @@
 //= require ../bootstrap_wizard/prettify
 //= require ../bootstrap_wizard/jquery.bootstrap.wizard
 //= require ../jquery.ui.theme.lightness/js/jquery-ui-1.8.22.custom.min
+//= require ../sticky_notes/js/jquery-stickynotes
 
 // void() stopped working?!
 function xvoid(){}

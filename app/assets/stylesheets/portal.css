@@ -14,5 +14,7 @@
  *= require ../bootstrap/css/bootstrap-responsive
  *= require ../bootstrap_wizard/prettify
  *= require ../jquery.ui.theme.lightness/css/ui-lightness/jquery-ui-1.8.22.custom
+ *= require ../sticky_notes/css/stickyNote
+ *= require ./sticky_notes
  *= require ./portal_global
  */

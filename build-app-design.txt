@@ -29,6 +29,29 @@ bundle install --binstubs
 
 
 
+    notes = StickyNote.where{controller == my{params[:controller]} and action == my{params[:action]}}
+  end
+
+  def update_sticky_note
+    render :json => { 
+      background_color: params[:background_color], 
+      height:           params[:height], 
+      id:               params[:id], 
+      left:             params[:left], 
+      note:             params[:note], 
+      top:              params[:top], 
+      width:            params[:width], 
+      z_index:          params[:z_index]
+
+
+bundle exec rails g scaffold StickyNote controller:string action:string background_color:string height:integer left:integer top:integer width:integer z_index:integer
+bundle exec rails g migration add_note_to_sticky_notes note:string
+bundle exec rails g migration add_collection_id_to_sticky_notes collection_id:string
+bundle exec rails g migration add_referrer_url_to_sticky_notes referrer_url:string
+bundle exec rake db:migrate db:migrate:status
+bundle exec rails c
+
+
 
 # ===== ARCHIVE
 

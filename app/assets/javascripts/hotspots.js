@@ -16,7 +16,7 @@ function register_hotspots(){
       "data-path" => view_triple_play_directory_path,   anchor href value; when hotspot is clicked, go here
       "data-id" => "view-triple-play-directory",        id for div that surrounds anchor tag; this element is what is styled with border
       "data-mode" => "active",                          (new | active); when new, create opaque, solid yellow background color; when active, use a dashed border
-      "data-dark-background" => "false"                 (true | false); when true, applies 'hotspot-dark' (currently blue); else, no class is applied (currently yellow)
+      "data-dark-border" => "false"                     (true | false); when true, applies 'hotspot-dark' (currently blue); else, no class is applied (currently yellow)
    */
 
   $("img.hotspot-enabled").each(function(i, obj){
@@ -24,7 +24,7 @@ function register_hotspots(){
     var data_title = $(obj).attr("data-title");
     var data_path = $(obj).attr("data-path");
     var data_id = $(obj).attr("data-id");
-    var data_dark_background = ($(obj).attr("data-dark-background") == "true") ? "hotspot-dark" : "";
+    var data_dark_border = ($(obj).attr("data-dark-border") == "true") ? "hotspot-dark" : "";
 
     var hotspot_zone = '<div class="hotspot-zone ' + data_title + '"><\div>';
     var hotspot_zone_selector = ".hotspot-zone." + data_title;
@@ -35,7 +35,7 @@ function register_hotspots(){
 
     var hotspots = '<div class="hotspots">\n' +
     '  <div class="' + data_mode + '-hotspots"><!-- new,active -->\n' +
-    '    <div id="' + data_id + '" class="' + data_dark_background + '"><a href="' + data_path + '">' + data_id + '</a></div>\n' +
+    '    <div id="' + data_id + '" class="' + data_dark_border + '"><a href="' + data_path + '">' + data_id + '</a></div>\n' +
     '  </div>\n' +
     '</div>\n';
     
@@ -51,7 +51,7 @@ function register_hotspots(){
 
       <li data-id="view-triple-play-directory"    id for hotspot
         data-mode="active"                        (new | active); when new, create opaque, solid yellow background color; when active, use a dashed border
-        data-dark-background="false">             (true | false); when true, applies 'hotspot-dark' (currently blue); else, no class is applied (currently yellow)
+        data-dark-border="false">                 (true | false); when true, applies 'hotspot-dark' (currently blue); else, no class is applied (currently yellow)
 
         <% view_triple_play_directory_path %>     anchor href value; when hotspot is clicked, go here
       </li>
@@ -81,11 +81,11 @@ function register_hotspots(){
       var data_mode = $(li).attr("data-mode");
       var data_path = $(li).text();
       var data_id = $(li).attr("data-id");
-      var data_dark_background = ($(li).attr("data-dark-background") == "true") ? "hotspot-dark" : "";
+      var data_dark_border = ($(li).attr("data-dark-border") == "true") ? "hotspot-dark" : "";
 
       var hotspot = '' +
       '  <div class="' + data_mode + '-hotspots"><!-- new,active -->\n' +
-      '    <div id="' + data_id + '" class="' + data_dark_background + '"><a href="' + data_path + '">' + data_id + '</a></div>\n' +
+      '    <div id="' + data_id + '" class="' + data_dark_border + '"><a href="' + data_path + '">' + data_id + '</a></div>\n' +
       '  </div>\n';
       $(hotspot).appendTo(hotspots_selector);
     });
@@ -94,7 +94,7 @@ function register_hotspots(){
   });
 
     // <ul class="hotspot-enabled" data-image="/assets/mock/triple-play.png">
-    //   <li data-title="triple-play" data-id="view-triple-play-directory" data-mode="active" data-dark-background="false"><%= view_triple_play_directory_path %></li>
+    //   <li data-title="triple-play" data-id="view-triple-play-directory" data-mode="active" data-dark-border="false"><%= view_triple_play_directory_path %></li>
     // </ul>
   
 

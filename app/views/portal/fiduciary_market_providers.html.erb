@@ -1,0 +1,24 @@
+<style type="text/css">
+#enter-fiduciary-market{ position: absolute; left: 48px; top: 266px; width: 230px; height: 115px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="log-in-fiduciary-market-plan-service-provider">
+  <%= image_tag "/assets/mock/log-in-fiduciary-market-plan-service-provider.png" %>
+
+  <li data-id="enter-fiduciary-market" data-mode="active" data-dark-border="true">
+    <%= fiduciary_market_log_in_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/log_in_fiduciary_market_plan_service_provider", as: :log_in_fiduciary_market_plan_service_provider
+  get "portal/enter_fiduciary_market", as: :enter_fiduciary_market
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/log_in_fiduciary_market_plan_service_provider.html.erb ./app/views/portal/enter_fiduciary_market.html.erb
+%>
+
+

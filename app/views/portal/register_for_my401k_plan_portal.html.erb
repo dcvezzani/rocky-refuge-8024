@@ -1,5 +1,7 @@
 <style type="text/css">
 #enter-my401k-plan-portal{ position: absolute; left: 800px; top: 651px; width: 128px; height: 48px; }
+#send-an-email{ position: absolute; left: 146px; top: 469px; width: 36px; height: 20px; }
+#terms-and-conditions{ position: absolute; left: 588px; top: 602px; width: 283px; height: 39px; }
 </style>
 
 
@@ -22,6 +24,8 @@
 
   <div class="active-hotspots">
     <div id="enter-my401k-plan-portal" class="hotspot-dark"><%= link_to "enter-my401k-plan-portal", enter_my401k_plan_portal_path %></div>
+    <div id="send-an-email" class="hotspot-dark"><%= link_to "send-an-email", send_an_email_to_employer_path %></div>
+    <div id="terms-and-conditions" class="hotspot-dark"><%= link_to "terms-and-conditions", read_terms_and_conditions_for_my401k_portal_path %></div>
   </div>
 </div>
 <!-- /declare hotspots -->

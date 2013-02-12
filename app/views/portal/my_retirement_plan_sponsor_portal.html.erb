@@ -1,0 +1,77 @@
+
+<style type="text/css">
+#concierge-plan-sponsor{ position: absolute; left: 913px; top: 180px; width: 102px; height: 27px; }
+#fiduciary-market-providers{ position: absolute; left: 378px; top: 516px; width: 124px; height: 20px; }
+#lets-go-fiduciary-market{ position: absolute; left: 379px; top: 483px; width: 122px; height: 20px; }
+#my-401k-help{ position: absolute; left: 125px; top: 618px; width: 48px; height: 20px; }
+#my-401k-register{ position: absolute; left: 26px; top: 618px; width: 91px; height: 20px; }
+#my-401k-log-in{ position: absolute; left: 21px; top: 526px; width: 156px; height: 73px; }
+#watch-retirement-readiness-epidemic-video{ position: absolute; left: 555px; top: 202px; width: 138px; height: 31px; }
+#lets-go-retirement-readiness-epidemic{ position: absolute; left: 49px; top: 283px; width: 144px; height: 54px; }
+#zero-cost-service-download-pdf{ position: absolute; left: 868px; top: 557px; width: 44px; height: 20px; }
+#advertisement{ position: absolute; left: 719px; top: 232px; width: 291px; height: 193px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="my-retirement-plan-sponsor-portal">
+  <%= image_tag "/assets/mock/my-retirement-plan-sponsor-portal.png" %>
+
+  <li data-id="lets-go-retirement-readiness-epidemic" data-mode="active" data-dark-border="true">
+    <%= lets_go_retirement_readiness_epidemic_path %>
+  </li>
+
+  <li data-id="watch-retirement-readiness-epidemic-video" data-mode="active" data-dark-border="true">
+    <%= watch_retirement_readiness_epidemic_video_path %>
+  </li>
+
+  <li data-id="my-401k-log-in" data-mode="active" data-dark-border="false">
+    <%= enter_my401k_plan_portal_plan_sponsor_path %>
+  </li>
+
+  <li data-id="my-401k-register" data-mode="active" data-dark-border="false">
+    <%= register_for_my401k_plan_portal_plan_sponsor_path %>
+  </li>
+
+  <li data-id="my-401k-help" data-mode="active" data-dark-border="false">
+    <%= my401k_help_path %>
+  </li>
+
+  <li data-id="lets-go-fiduciary-market" data-mode="active" data-dark-border="true">
+    <%= lets_go_fiduciary_market_path %>
+  </li>
+
+  <li data-id="fiduciary-market-providers" data-mode="active" data-dark-border="true">
+    <%= fiduciary_market_providers_path %>
+  </li>
+
+  <li data-id="zero-cost-service-download-pdf" data-mode="active" data-dark-border="true">
+    <%= zero_cost_service_download_pdf_path %>
+  </li>
+
+  <li data-id="concierge-plan-sponsor" data-mode="active" data-dark-border="true">
+    <%= concierge_plan_sponsor_path %>
+  </li>
+
+  <li data-id="advertisement" data-mode="active" data-dark-border="true">
+    <%= advertisement_plan_sponsor_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/my_retirement_plan_sponsor_portal", as: :my_retirement_plan_sponsor_portal
+  get "portal/lets_go_retirement_readiness_epidemic", as: :lets_go_retirement_readiness_epidemic
+  get "portal/watch_retirement_readiness_epidemic_video", as: :watch_retirement_readiness_epidemic_video
+  get "portal/my_401k_log_in", as: :my_401k_log_in
+  get "portal/my_401k_register", as: :my_401k_register
+  get "portal/my_401k_help", as: :my_401k_help
+  get "portal/lets_go_fiduciary_market", as: :lets_go_fiduciary_market
+  get "portal/fiduciary_market_providers", as: :fiduciary_market_providers
+  get "portal/zero_cost_service_download_pdf", as: :zero_cost_service_download_pdf
+  get "portal/concierge_plan_sponsor", as: :concierge_plan_sponsor
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/my_retirement_plan_sponsor_portal.html.erb ./app/views/portal/lets_go_retirement_readiness_epidemic.html.erb ./app/views/portal/watch_retirement_readiness_epidemic_video.html.erb ./app/views/portal/my_401k_log_in.html.erb ./app/views/portal/my_401k_register.html.erb ./app/views/portal/my_401k_help.html.erb ./app/views/portal/lets_go_fiduciary_market.html.erb ./app/views/portal/fiduciary_market_providers.html.erb ./app/views/portal/zero_cost_service_download_pdf.html.erb ./app/views/portal/concierge_plan_sponsor.html.erb
+%>
+

@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121226192621) do
+ActiveRecord::Schema.define(:version => 20130212173451) do
+
+  create_table "sticky_notes", :force => true do |t|
+    t.string   "controller"
+    t.string   "action"
+    t.string   "background_color"
+    t.integer  "height"
+    t.integer  "left"
+    t.integer  "top"
+    t.integer  "width"
+    t.integer  "z_index"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "note"
+    t.string   "collection_id"
+    t.string   "referrer_url"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

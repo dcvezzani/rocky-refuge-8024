@@ -1,0 +1,41 @@
+<style type="text/css">
+  #register-for-premium-membership{ position: absolute; left: 838px; top: 572px; width: 131px; height: 51px; }
+  #personal-portal-welcome{ position: absolute; left: 192px; top: 330px; width: 96px; height: 20px; }
+  #resource-center-welcome{ position: absolute; left: 260px; top: 308px; width: 103px; height: 20px; }
+  #read-terms-and-conditions-for-premium-membership{ position: absolute; left: 831px; top: 526px; width: 157px; height: 21px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="become-a-premium-member">
+  <%= image_tag "/assets/mock/become-a-premium-member.png" %>
+
+  <li data-id="resource-center-welcome" data-mode="active" data-dark-border="true">
+    <%= resource_center_welcome_path %>
+  </li>
+
+  <li data-id="personal-portal-welcome" data-mode="active" data-dark-border="true">
+    <%= enter_my401k_plan_portal_path %>
+  </li>
+
+  <li data-id="register-for-premium-membership" data-mode="active" data-dark-border="true">
+    <%= register_for_premium_membership_path %>
+  </li>
+
+  <li data-id="read-terms-and-conditions-for-premium-membership" data-mode="active" data-dark-border="true">
+    <%= read_terms_and_conditions_for_premium_membership_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+get "portal/become_a_premium_member", as: :become_a_premium_member
+get "portal/resource_center_welcome", as: :resource_center_welcome
+get "portal/personal_portal_welcome", as: :personal_portal_welcome
+get "portal/register_for_premium_membership", as: :register_for_premium_membership
+get "portal/read_terms_and_conditions_for_premium_membership", as: :read_terms_and_conditions_for_premium_membership
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/become_a_premium_member.html.erb ./app/views/portal/resource_center_welcome.html.erb ./app/views/portal/personal_portal_welcome.html.erb ./app/views/portal/register_for_premium_membership.html.erb ./app/views/portal/read_terms_and_conditions_for_premium_membership.html.erb
+%>
+
