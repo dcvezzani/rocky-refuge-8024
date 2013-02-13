@@ -52,6 +52,17 @@ bundle exec rake db:migrate db:migrate:status
 bundle exec rails c
 
 
+bundle exec rails g migration change_note_column_type_for_sticky_notes note:text
+
+def up
+    change_column :your_table, :your_column, :text
+end
+def down
+    # This might cause trouble if you have strings longer
+    # than 255 characters.
+    change_column :your_table, :your_column, :string
+end
+
 
 # ===== ARCHIVE
 
