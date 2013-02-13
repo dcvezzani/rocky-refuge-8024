@@ -232,7 +232,8 @@
 			var context = this;
 			$('.note').blur(function(){
 				sticky = $(this).parents('.stickyNote');
-				sticky.append('<div class="textnote">'+ this.value+'</div>');
+        var sticky_value = this.value.replace(/\n\n+/g, "\n<div class='paragraph-break'></div>\n");
+				sticky.append('<div class="textnote">'+ sticky_value +'</div>');
 				//sticky[0].id=""+context.id+"";
 				$(this).parents('form').remove();
 				context.callback(sticky);

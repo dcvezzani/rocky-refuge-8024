@@ -70,6 +70,16 @@ EOL
         border-left: 2px solid black;
         padding: 0 .5em;
       }
+
+      .stickyNote div.paragraph-break{
+        padding-top: .75em;
+      }
+      .stickyNote ol, 
+      .stickyNote ul{
+        padding: 0; 
+        margin: 0;
+        margin-left: 1em;
+      }
     </style>
 EOL
     raw(content)

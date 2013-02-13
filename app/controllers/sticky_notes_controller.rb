@@ -76,7 +76,7 @@ class StickyNotesController < ApplicationController
     respond_to do |format|
       if @sticky_note.update_attributes(params[:sticky_note])
         format.html { redirect_to @sticky_note, notice: 'Sticky note was successfully updated.' }
-        format.json { head :no_content }
+        format.json { render json: @sticky_note, status: :created, location: @sticky_note }
       else
         format.html { render action: "edit" }
         format.json { render json: @sticky_note.errors, status: :unprocessable_entity }
