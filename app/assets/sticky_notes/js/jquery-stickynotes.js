@@ -258,7 +258,7 @@
 				data += (prefixed_field_name + "=" + self.collection_id);
 
         prefixed_field_name = ((self.prefix) ? self.prefix + "[referrer_url]" : "referrer_url");
-				data += "&" + (prefixed_field_name + "=" + location.href);
+				data += "&" + (prefixed_field_name + "=" + location.href.match(/http:\/\/[^\/]+(.+)$/)[1]);
 
         var note_id = null;
 
