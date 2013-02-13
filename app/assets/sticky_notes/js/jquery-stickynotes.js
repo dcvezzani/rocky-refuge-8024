@@ -269,7 +269,8 @@
 
 					switch(this.toString()){
 						case 'note':
-							data += div.children('.textnote').html();
+              var note_value = div.children('.textnote').html();
+							data += escape(note_value);
               break;
 						case 'id':
               if(div[0].id != 'newStickyNote'){
