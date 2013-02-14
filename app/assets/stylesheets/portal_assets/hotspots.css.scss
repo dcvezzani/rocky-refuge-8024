@@ -13,6 +13,7 @@
 
   .new-hotspots div{
     position: absolute; 
+    z-index: 1000;
   }
   .new-hotspot{
     height: 4em;
@@ -29,4 +30,10 @@
   .hotspot-zone{
     position: relative; 
   }
-  
+ 
+  .hotspot-zone .cs-ribbon{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    z-index: 1;
+  }

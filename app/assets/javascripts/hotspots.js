@@ -25,12 +25,16 @@ function register_hotspots(){
     var data_path = $(obj).attr("data-path");
     var data_id = $(obj).attr("data-id");
     var data_dark_border = ($(obj).attr("data-dark-border") == "true") ? "hotspot-dark" : "";
+    var data_coming_soon = ($(obj).attr("data-coming-soon") == "true") ? '<img src="/assets/mock/coming-soon.png" class="cs-ribbon editable" id="cs-' + data_id + '" title="cs-' + data_id + '" />' : null;
 
     var hotspot_zone = '<div class="hotspot-zone ' + data_title + '"><\div>';
     var hotspot_zone_selector = ".hotspot-zone." + data_title;
     $(hotspot_zone).insertAfter(obj);
 
     //var img_tag = $(obj).detach();
+    if(data_coming_soon){
+      $(data_coming_soon).appendTo(hotspot_zone_selector);
+    }
     $(obj).appendTo(hotspot_zone_selector);
 
     var hotspots = '<div class="hotspots">\n' +
@@ -73,6 +77,9 @@ function register_hotspots(){
     var img = '<img src="' + data_image + '" />'
     $(img).appendTo(hotspot_zone_selector);
 
+    var data_coming_soon = ($(obj).attr("data-coming-soon") == "true") ? '<img src="/assets/mock/coming-soon.png" class="cs-ribbon editable" id="cs-' + data_title + '" title="cs-' + data_title + '" />' : null;
+    $(data_coming_soon).appendTo(hotspot_zone_selector);
+    
     var hotspots = '<div class="hotspots"></div>'
     var hotspots_selector = hotspot_zone_selector + " div.hotspots";
     $(hotspots).appendTo(hotspot_zone_selector);

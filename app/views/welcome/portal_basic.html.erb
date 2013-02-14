@@ -1,10 +1,7 @@
 <style type="text/css">
-#lets-go{ position: absolute; left: 36px; top: 343px; width: 150px; height: 55px; }
-#free-retirement-check-up{ position: absolute; left: 134px; top: 271px; width: 93px; height: 20px; }
-#watch-plan-participant-portal-video{ position: absolute; left: 544px; top: 263px; width: 147px; height: 32px; }
-
-#my401k-log-in{ position: absolute; left: 10px; top: 582px; width: 155px; height: 76px; }
-#my401k-register{ position: absolute; left: 12px; top: 672px; width: 96px; height: 23px; }
+#watch-plan-participant-portal-video{ position: absolute; left: 539px; top: 187px; width: 156px; height: 40px; }
+#free-retirement-check-up{ position: absolute; left: 103px; top: 199px; width: 157px; height: 20px; }
+#lets-go{ position: absolute; left: 36px; top: 272px; width: 143px; height: 53px; }
 
 #e-money-log-in{ position: absolute; left: 6.99993896484375px; top: 119px; width: 111.5px; height: 27.5px; }
 #e-money-security{ position: absolute; left: 9px; top: 223px; width: 111.5px; height: 27.5px; }
@@ -23,6 +20,8 @@
 #plan-sponsors{ position: absolute; left: 688px; top: 20px; width: 106px; height: 20px; }
 #plan-service-providers{ position: absolute; left: 851px; top: 20px; width: 152px; height: 22px; }
 
+#my401k-register{ position: absolute; left: 8px; top: 256px; width: 102px; height: 20px; }
+#my401k-log-in{ position: absolute; left: 10px; top: 166px; width: 156px; height: 75px; }
 #my401k-help{ position: absolute; left: -582px; top: 180px; width: 37px; height: 21px; }
 </style>
 
@@ -30,9 +29,32 @@
 
 <div class="columns">
   <div class="col col_1">
-    <%= image_tag "/assets/mock/are-you-on-track-video.png" %>
-    <%= image_tag "/assets/mock/my-401k.png" %>
-
+    <ul class="hotspot-enabled" data-title="free-retirement-check-up-launcher" data-coming-soon="true">
+      <%= image_tag "/assets/mock/are-you-on-track-video.png" %>
+      <li data-id="lets-go" data-mode="active" data-dark-border="true">
+        <%= enter_my401k_plan_portal_path %>
+      </li>
+      <li data-id="free-retirement-check-up" data-mode="active" data-dark-border="true">
+        <%= free_retirement_checkup_path %>
+      </li>
+      <li data-id="watch-plan-participant-portal-video" data-mode="active" data-dark-border="true">
+        <%= watch_plan_participant_portal_video_path %>
+        </li>
+    </ul>
+    
+    <ul class="hotspot-enabled" data-title="my-401k" data-coming-soon="false">
+      <%= image_tag "/assets/mock/my-401k.png" %>
+      <li data-id="my401k-log-in" data-mode="active" data-dark-border="false">
+        <%= become_a_premium_member_path %>
+      </li>
+      <li data-id="my401k-register" data-mode="active" data-dark-border="false">
+        <%= register_for_my401k_plan_portal_path %>
+      </li>
+      <li data-id="my401k-help" data-mode="active" data-dark-border="false">
+        <%= my401k_help_path %>
+        </li>
+    </ul>
+    
     <ul class="hotspot-enabled" data-title="e-money">
       <%= image_tag "/assets/mock/e-money.png" %>
       <li data-id="e-money-log-in" data-mode="active" data-dark-border="true">
@@ -55,7 +77,7 @@
 
     <%#= image_tag "/assets/mock/triple-play.png", class: "hotspot-enabled", "data-title" => "triple-play", "data-path" => view_triple_play_directory_path, "data-id" => "view-triple-play-directory", "data-mode" => "active", "data-dark-border" => "false" %>
 
-    <ul class="hotspot-enabled" data-image="/assets/mock/triple-play.png" data-title="triple-play">
+    <ul class="hotspot-enabled" data-image="/assets/mock/triple-play.png" data-title="triple-play" data-coming-soon="true">
       <li data-id="view-triple-play-directory" data-mode="active" data-dark-border="false">
         <%= view_triple_play_directory_path %>
       </li>
@@ -68,7 +90,7 @@
       </li>
     </ul>
 
-    <ul class="hotspot-enabled" data-title="resource-center">
+    <ul class="hotspot-enabled" data-title="resource-center" data-coming-soon="true">
       <%= image_tag "/assets/mock/resource-center.png" %>
       <li data-id="resource-center-featured-content" data-mode="active" data-dark-border="false">
         <%= resource_center_welcome_path %>
@@ -84,25 +106,16 @@
   </div>
 </div>
 
-<!-- declare hotspots -->
-<!-- 
-  1. place new div in '#new-hotspots', with or without an enclosed anchor tag
-  2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document (or layout) in a script block
-  3. copy resulting style from console.log (e.g., in FireBug)
-  4. paste in style block at the top
-  5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
--->
-<div class="hotspots">
-  <div class="new-hotspots">
-  </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".ribbon.editable").draggable({
+      stop: function(e, ui){
+        var target_name = $(e.target).attr("id");
+        var target_width = $(e.target).width();
+        var target_height = $(e.target).height();
 
-  <div class="active-hotspots">
-    <div id="lets-go"><%= link_to "Let's go", become_a_premium_member_path %></div>
-    <div id="free-retirement-check-up"><%= link_to "free-retirement-check-up", free_retirement_checkup_path %></div>
-    <div id="watch-plan-participant-portal-video" class="hotspot-dark"><%= link_to "watch-plan-participant-portal-video", watch_plan_participant_portal_video_path %></div>
-
-    <div id="my401k-log-in"><%= link_to "my401k-log-in", enter_my401k_plan_portal_path %></div>
-    <div id="my401k-register"><%= link_to "my401k-register", register_for_my401k_plan_portal_path %></div>
-  </div>
-</div>
-<!-- /declare hotspots -->
+        console.log("#" + target_name + "{ position: absolute; left: " + ui.position.left + "px; top: " + ui.position.top + "px; width: " + target_width + "px; height: " + target_height + "px; }");
+      }
+    });
+  });
+</script>

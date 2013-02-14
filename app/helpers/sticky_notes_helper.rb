@@ -46,6 +46,15 @@ EOL
       left: 37, 
       top: 126
     });
+
+    $("ul.sticky-note-actions").hover(
+      function(e){ // over
+        $(this).find("li").addClass("hover");
+      }, 
+      function(e){ // out
+        $(this).find("li").removeClass("hover");
+      }
+    );
   });
 </script>
 EOL
@@ -58,12 +67,22 @@ EOL
       ul.sticky-note-actions{
         margin: 0; 
         padding: 0; 
+        clear: both; 
+        padding-top: 1em;
+      }
+      ul.sticky-note-actions li.hover{
+        position: relative; 
+        z-index: 1100;
+      }
+      ul.sticky-note-actions li a{
+        color: white; 
       }
       ul.sticky-note-actions li{
         list-style: none; 
         border-left: 0;
-        padding-right: .5em;
+        padding: 0 .5em;
         display: inline-block; 
+        background-color: #2F2F2F; 
       }
       ul.sticky-note-actions li + li{
         list-style: none; 
