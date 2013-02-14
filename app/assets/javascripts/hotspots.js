@@ -117,10 +117,30 @@ function register_hotspots(){
   });
 
   $(".active-hotspots div").click(function(e){
+    if(e.shiftKey){ return false; }
+
     var href = $(this).find("a").attr("href");
     console.log("href: " + href);
     location.href = href;
     return false;
   });
+
+  // this allows for adjusting hotspots on the fly
+  // 1. start with mouse outside of hotspot
+  // 2. hold the Shift key down
+  // 3. while holding the Shift key down, hover mouse over hotspot
+  // 4. you can move and resize as long as you don't go outside the hotspot boundaries
+  $(".hotspot").hover(
+    function(e){
+      if(e.shiftKey){
+        $(this).addClass("new-hotspot");
+        $(this).draggable({ stop: stop_hotspot_adjustment }).resizable({ stop: stop_hotspot_adjustment });
+      }
+    }, 
+    function(e){
+      $(this).draggable("destroy").resizable("destroy");
+      $(this).removeClass("new-hotspot");
+    }
+  );
 }
 
