@@ -66,7 +66,7 @@ function register_hotspots(){
   $("ul.hotspot-enabled").each(function(i, obj){
     var data_image = $(obj).attr("data-image");
     if(typeof(data_image) == "undefined"){ data_image = $("img", obj).attr("src"); }
-    console.log("data_image: " + data_image);
+    //console.log("data_image: " + data_image);
 
     var data_title = $(obj).attr("data-title");
 
@@ -90,11 +90,13 @@ function register_hotspots(){
       var data_id = $(li).attr("data-id");
       var data_dark_border = ($(li).attr("data-dark-border") == "true") ? "hotspot-dark" : "";
 
-      var hotspot = '' +
-      '  <div class="' + data_mode + '-hotspots"><!-- new,active -->\n' +
-      '    <div id="' + data_id + '" class="' + data_dark_border + '"><a href="' + data_path + '">' + data_id + '</a></div>\n' +
-      '  </div>\n';
-      $(hotspot).appendTo(hotspots_selector);
+      if(data_id != "hotspot-placeholder"){ 
+        var hotspot = '' +
+        '  <div class="' + data_mode + '-hotspots active-hotspots-hoverable"><!-- new,active -->\n' +
+        '    <div id="' + data_id + '" class="' + data_dark_border + '"><a href="' + data_path + '">' + data_id + '</a></div>\n' +
+        '  </div>\n';
+        $(hotspot).appendTo(hotspots_selector);
+      }
     });
 
     $(obj).detach();
@@ -117,7 +119,7 @@ function register_hotspots(){
   });
 
   $(".active-hotspots div").click(function(e){
-    if(e.shiftKey){ return false; }
+    if(e.shiftKey || $(this).hasClass("new-hotspot")){ return false; }
 
     var href = $(this).find("a").attr("href");
     console.log("href: " + href);
@@ -130,17 +132,40 @@ function register_hotspots(){
   // 2. hold the Shift key down
   // 3. while holding the Shift key down, hover mouse over hotspot
   // 4. you can move and resize as long as you don't go outside the hotspot boundaries
+
+  function removeQuickEditControls(self, e, callback){
+    $(".new-hotspot").each(function(i, obj){
+      $(obj).draggable("destroy").resizable("destroy");
+      $(obj).removeClass("new-hotspot");
+      $(obj).parent().addClass("active-hotspots-hoverable");
+    });
+
+    callback(self, e);
+  }
+
   $(".hotspot").hover(
     function(e){
-      if(e.shiftKey){
-        $(this).addClass("new-hotspot");
-        $(this).draggable({ stop: stop_hotspot_adjustment }).resizable({ stop: stop_hotspot_adjustment });
-      }
+      removeQuickEditControls(this, e, function(self, e){
+        if(e.shiftKey){
+          $(self).addClass("new-hotspot");
+          $(self).parent().removeClass("active-hotspots-hoverable");
+          $(self).draggable({ stop: stop_hotspot_adjustment }).resizable({ stop: stop_hotspot_adjustment });
+        }
+      });
     }, 
     function(e){
-      $(this).draggable("destroy").resizable("destroy");
-      $(this).removeClass("new-hotspot");
+      if(!e.shiftKey && $(this).hasClass("new-hotspot")){
+        removeQuickEditControls(this, e, function(){});
+      }
     }
   );
+
+  // $(document).keyup(function(e){
+  //   if(!e.shiftKey && $(".new-hotspot").length > 0){
+  //     $(".new-hotspot").each(function(i, obj){
+  //       removeQuickEditControls(this, e, function(){});
+  //     });
+  //   }
+  // });
 }
 

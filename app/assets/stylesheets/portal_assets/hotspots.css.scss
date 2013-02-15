@@ -18,12 +18,15 @@
   .new-hotspot{
     height: 4em;
     width: 150px;
+    z-index: 2000;
   }
 
   .active-hotspots div a{
     display: none; 
   }
-  .active-hotspots div:hover{
+  .active-hotspots.active-hotspots-hoverable div:hover{
+  }
+  .active-hotspots.active-hotspots-hoverable div:hover{
     cursor: pointer;
   }
 

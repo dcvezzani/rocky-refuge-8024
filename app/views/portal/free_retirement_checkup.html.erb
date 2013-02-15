@@ -1,32 +1,29 @@
 <style type="text/css">
-#schedule-initial-interview{ position: absolute; left: 808px; top: 552px; width: 132px; height: 62px; }
-#terms-and-conditions{ position: absolute; left: 596px; top: 474px; width: 341px; height: 39px; }
+#terms-and-conditions{ position: absolute; left: 604px; top: 476px; width: 352px; height: 40px; }
+#request-initial-interview{ position: absolute; left: 825px; top: 538px; width: 132px; height: 62px; }
 </style>
 
+<ul class="hotspot-enabled" data-title="schedule-your-initial-interview">
+  <%= image_tag "/assets/mock/schedule-your-initial-interview.png" %>
 
+  <li data-id="request-initial-interview" data-mode="active" data-dark-border="true">
+    <%= send_an_email_path %>
+  </li>
 
-<%= image_tag "/assets/mock/order-your-free-retirement-checkup.png" %>
+  <li data-id="terms-and-conditions" data-mode="active" data-dark-border="true">
+    <%= read_terms_and_conditions_for_free_retirement_checkup_path %>
+  </li>
+</ul>
 
+<%# 
+Target Routes
+  get "portal/schedule_your_initial_interview", as: :schedule_your_initial_interview
+  get "portal/request_initial_interview", as: :request_initial_interview
+  get "portal/terms_and_conditions", as: :terms_and_conditions
+%>
 
-
-<!-- declare hotspots -->
-<!-- 
-  1. place new div in '#new-hotspots', with or without an enclosed anchor tag
-  2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document (or layout) in a script block
-  3. copy resulting style from console.log (e.g., in FireBug)
-  4. paste in style block at the top
-  5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
--->
-<div class="hotspots">
-  <div class="new-hotspots">
-  </div>
-
-  <div class="active-hotspots">
-    <div id="schedule-initial-interview" class="hotspot-dark"><%= link_to "schedule-initial-interview", select_a_financial_professional_path %></div>
-    <div id="terms-and-conditions" class="hotspot-dark"><%= link_to "terms-and-conditions", read_terms_and_conditions_for_free_retirement_checkup_path %></div>
-  </div>
-</div>
-<!-- /declare hotspots -->
-
-
+<%# 
+Target Files
+mvim -p ./app/views/portal/schedule_your_initial_interview.html.erb ./app/views/portal/request_initial_interview.html.erb ./app/views/portal/terms_and_conditions.html.erb
+%>
 

@@ -1,0 +1,31 @@
+<style type="text/css">
+#register-as-a-new-user{ position: absolute; left: 419px; top: 442px; width: 133px; height: 55px; }
+#log-in-as-existing-user{ position: absolute; left: 92px; top: 314px; width: 106px; height: 52px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="log-in-or-register-popup">
+  <%= image_tag "/assets/mock/log-in-or-register-popup.png" %>
+
+  <li data-id="log-in-as-existing-user" data-mode="active" data-dark-border="true">
+    <%= enter_my401k_plan_portal_path %>
+    <%#= log_in_as_existing_user_path %>
+  </li>
+
+  <li data-id="register-as-a-new-user" data-mode="active" data-dark-border="true">
+    <%= mrrme_membership_options_path %>
+    <%#= register_as_a_new_user_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/log_in_or_register_popup", as: :log_in_or_register_popup
+  get "portal/log_in_as_existing_user", as: :log_in_as_existing_user
+  get "portal/register_as_a_new_user", as: :register_as_a_new_user
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/log_in_or_register_popup.html.erb ./app/views/portal/log_in_as_existing_user.html.erb ./app/views/portal/register_as_a_new_user.html.erb
+%>
+

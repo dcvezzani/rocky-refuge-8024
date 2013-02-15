@@ -9,6 +9,7 @@ Clf004::Application.routes.draw do
 
   get "welcome/portal_basic", controller: :portal
   get "welcome/portal_basic", controller: :portal, as: :asdf
+  get "welcome/portal_basic", controller: :portal, as: :hotspot_placeholder
   get "portal/free_retirement_checkup", as: :free_retirement_checkup
   get "portal/select_a_financial_professional", as: :select_a_financial_professional
   get "portal/send_an_email", as: :send_an_email
@@ -77,7 +78,18 @@ Clf004::Application.routes.draw do
   
   get "portal/my401k_help", as: :my401k_help
 
+  get "portal/order_your_free_retirement_checkup", as: :order_your_free_retirement_checkup
+  get "portal/schedule_your_initial_interview", as: :schedule_your_initial_interview
+  get "portal/request_initial_interview", as: :request_initial_interview
+  get "portal/terms_and_conditions", as: :terms_and_conditions
   
+  get "portal/log_in_or_register_popup", as: :log_in_or_register_popup
+  get "portal/log_in_as_existing_user", as: :log_in_as_existing_user
+  get "portal/register_as_a_new_user", as: :register_as_a_new_user
+ 
+  get "portal/mrrme_membership_options", as: :mrrme_membership_options
+  get "portal/mrrme_terms_and_conditions", as: :mrrme_terms_and_conditions
+  get "portal/mrrme_register_now", as: :mrrme_register_now
   
   post "portal/sticky_note"
 

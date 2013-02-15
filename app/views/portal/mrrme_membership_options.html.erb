@@ -1,0 +1,29 @@
+<style type="text/css">
+#mrrme-register-now{ position: absolute; left: 822px; top: 547px; width: 135px; height: 62px; }
+#mrrme-terms-and-conditions{ position: absolute; left: 804px; top: 508px; width: 181px; height: 20px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="mrrme-membership-options">
+  <%= image_tag "/assets/mock/mrrme-membership-options.png" %>
+
+  <li data-id="mrrme-terms-and-conditions" data-mode="active" data-dark-border="true">
+    <%= mrrme_terms_and_conditions_path %>
+  </li>
+
+  <li data-id="mrrme-register-now" data-mode="active" data-dark-border="true">
+    <%= mrrme_register_now_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/mrrme_membership_options", as: :mrrme_membership_options
+  get "portal/mrrme_terms_and_conditions", as: :mrrme_terms_and_conditions
+  get "portal/mrrme_register_now", as: :mrrme_register_now
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/mrrme_membership_options.html.erb ./app/views/portal/mrrme_terms_and_conditions.html.erb ./app/views/portal/mrrme_register_now.html.erb
+%>
+
