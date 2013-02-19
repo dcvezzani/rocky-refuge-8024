@@ -6,8 +6,4 @@ class WelcomeController < ApplicationController
 
   def wizard
   end
-
-  def portal_basic
-    render layout: "portal"
-  end
 end
