@@ -1,0 +1,34 @@
+<style type="text/css">
+#enter-my401k-plan-portal{ position: absolute; left: 800px; top: 651px; width: 128px; height: 48px; }
+#send-an-email{ position: absolute; left: 146px; top: 469px; width: 36px; height: 20px; }
+#terms-and-conditions{ position: absolute; left: 588px; top: 602px; width: 283px; height: 39px; }
+</style>
+
+
+
+<%= image_tag "/assets/mock/register-for-my401k-plan-portal.png" %>
+
+
+
+<!-- declare hotspots -->
+<!-- 
+  1. place new div in '#new-hotspots', with or without an enclosed anchor tag
+  2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document (or layout) in a script block
+  3. copy resulting style from console.log (e.g., in FireBug)
+  4. paste in style block at the top
+  5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
+-->
+<div class="hotspots">
+  <div class="new-hotspots">
+  </div>
+
+  <div class="active-hotspots">
+    <div id="enter-my401k-plan-portal" class="hotspot-dark"><%= link_to "enter-my401k-plan-portal", enter_my401k_plan_portal_path %></div>
+    <div id="send-an-email" class="hotspot-dark"><%= link_to "send-an-email", send_an_email_to_employer_path %></div>
+    <div id="terms-and-conditions" class="hotspot-dark"><%= link_to "terms-and-conditions", read_terms_and_conditions_for_my401k_portal_path %></div>
+  </div>
+</div>
+<!-- /declare hotspots -->
+
+
+

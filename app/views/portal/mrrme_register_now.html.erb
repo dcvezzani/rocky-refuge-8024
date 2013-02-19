@@ -1,0 +1,23 @@
+<style type="text/css">
+#resource-target-decl{ }
+</style>
+
+<ul class="hotspot-enabled" data-title="mrrme-register-now">
+  <%= image_tag "/assets/mock/mrrme-register-now.png" %>
+
+  <li data-id="hotspot-placeholder" data-mode="new" data-dark-border="false">
+    <%= hotspot_placeholder_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/mrrme_register_now", as: :mrrme_register_now
+  get "portal/hotspot_placeholder", as: :hotspot_placeholder
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/mrrme_register_now.html.erb ./app/views/portal/hotspot_placeholder.html.erb
+%>
+

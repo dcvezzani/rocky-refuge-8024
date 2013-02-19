@@ -1,0 +1,42 @@
+<style type="text/css">
+#log-in-to-access-e-money{ position: absolute; left: 290px; top: 642px; width: 217px; height: 54px; }
+#fast-start-support{ position: absolute; left: 565px; top: 497px; width: 324px; height: 30px; }
+#log-in-for-existing-users{ position: absolute; left: 565px; top: 456px; width: 325px; height: 30px; }
+#become-a-premium-member{ position: absolute; left: 148px; top: 539px; width: 51px; height: 20px; }
+#better-organize-your-financial-life-test-drive{ position: absolute; left: 755px; top: 248px; width: 188px; height: 172px; }
+#better-organize-your-financial-life-security{ position: absolute; left: 545px; top: 246px; width: 188px; height: 172px; }
+#better-organize-your-financial-life-video{ position: absolute; left: 36px; top: 181px; width: 476px; height: 198px; }
+</style>
+
+
+
+<%= image_tag "/assets/mock/better-organize-your-financial-life.png" %>
+
+
+
+<!-- declare hotspots -->
+<!-- 
+  1. place new div in '#new-hotspots', with or without an enclosed anchor tag
+  2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document (or layout) in a script block
+  3. copy resulting style from console.log (e.g., in FireBug)
+  4. paste in style block at the top
+  5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
+-->
+<div class="hotspots">
+  <div class="new-hotspots">
+  </div>
+
+  <div class="active-hotspots">
+    <div id="log-in-for-existing-users" class="hotspot-dark"><%= link_to "log-in-for-existing-users", enter_e_money_portal_path %></div>
+    <div id="fast-start-support" class="hotspot-dark"><%= link_to "fast-start-support", fast_start_support_path %></div>
+    <div id="log-in-to-access-e-money" class="hotspot-dark"><%= link_to "log-in-to-access-e-money", log_in_to_access_e_money_path %></div>
+    <div id="become-a-premium-member" class="hotspot-dark"><%= link_to "become-a-premium-member", become_a_premium_member_path %></div>
+    <div id="better-organize-your-financial-life-test-drive" class="hotspot-dark"><%= link_to "better-organize-your-financial-life-test-drive", better_organize_your_financial_life_test_drive_path %></div>
+    <div id="better-organize-your-financial-life-security" class="hotspot-dark"><%= link_to "better-organize-your-financial-life", better_organize_your_financial_life_security_path %></div>
+    <div id="better-organize-your-financial-life-video" class="hotspot-dark"><%= link_to "better-organize-your-financial-life-video", better_organize_your_financial_life_video_path %></div>
+  </div>
+</div>
+<!-- /declare hotspots -->
+
+
+

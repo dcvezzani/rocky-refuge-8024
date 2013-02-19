@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Retirement Made Easy</title>
+  <%= stylesheet_link_tag    "portal", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+    #plan-service-providers{ position: absolute; left: 848px; top: 19px; width: 152px; height: 22px; }
+    #plan-sponsors{ position: absolute; left: 686px; top: 20px; width: 106px; height: 20px; }
+    #plan-participants{ position: absolute; left: 514px; top: 20px; width: 112px; height: 20px; }
+  </style>
+</head>
+
+<body>
+
+<div id="page-outer-wrapper">
+  <div id="page">
+
+    <div class="header">
+      <h3>My Retirement Made Easy</h3>
+      <ul class="audiences">
+        <li>Plan Participants</li>
+        <li>Plan Sponsors</li>
+        <li>Plan Service Providers</li>
+      </ul>
+    </div>
+
+    <%= yield %>   
+
+    <%= sticky_notes(params[:controller], params[:action]) %>
+    
+    <!-- declare hotspots -->
+    <!-- 
+      1. place new div in '#new-hotspots', with or without an enclosed anchor tag
+      2. drag and adjust dimensions; make sure register hotspots is called at the bottom of the document in a script block
+      3. copy resulting style from console.log (e.g., in FireBug)
+      4. paste in style block at the top
+      5. move div to '#active-hotspots' when done; a light-yellow dashed line should be left to indicate where the hotspot is
+    -->
+    <div class="hotspots">
+      <div class="new-hotspots">
+      </div>
+
+      <div class="active-hotspots active-hotspots-hoverable">
+        <div id="plan-participants"><%= link_to "plan-participants", portal_plan_participants_path %></div>
+        <div id="plan-sponsors"><%= link_to "plan-sponsors", my_retirement_plan_sponsor_portal_path %></div>
+        <div id="plan-service-providers"><%= link_to "plan-service-providers", my_retirement_plan_service_provider_portal_path %></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+</body>
+</html>
+
+<script type="text/javascript">
+  $(document).ready(function(){ register_hotspots(); });
+</script>
+

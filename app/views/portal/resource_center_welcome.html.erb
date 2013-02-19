@@ -1,0 +1,18 @@
+<style type="text/css">
+#resource-center-all{ position: absolute; left: 590px; top: 197px; width: 381px; height: 116px; }
+#get-access-now{ position: absolute; left: 308px; top: 239px; width: 107px; height: 24px; }
+#premium-members{ position: absolute; left: 312px; top: 193px; width: 107px; height: 24px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="resource-center-welcome">
+  <%= image_tag "/assets/mock/resource-center-welcome.png" %>
+  <li data-id="resource-center-all" data-mode="active" data-dark-border="true">
+    <%= resource_center_all_path %>
+  </li>
+  <li data-id="get-access-now" data-mode="active" data-dark-border="true">
+    <%= become_a_premium_member_path %>
+  </li>
+  <li data-id="premium-members" data-mode="active" data-dark-border="true">
+    <%= become_a_premium_member_path %>
+  </li>
+</ul>

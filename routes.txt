@@ -1,0 +1,85 @@
+                         sticky_notes_by_referrer_url GET    /sticky_notes/index_by_referrer_url(.:format)                           sticky_notes#index_by_referrer_url
+                                         sticky_notes GET    /sticky_notes(.:format)                                                 sticky_notes#index
+                                                      POST   /sticky_notes(.:format)                                                 sticky_notes#create
+                                      new_sticky_note GET    /sticky_notes/new(.:format)                                             sticky_notes#new
+                                     edit_sticky_note GET    /sticky_notes/:id/edit(.:format)                                        sticky_notes#edit
+                                          sticky_note GET    /sticky_notes/:id(.:format)                                             sticky_notes#show
+                                                      PUT    /sticky_notes/:id(.:format)                                             sticky_notes#update
+                                                      DELETE /sticky_notes/:id(.:format)                                             sticky_notes#destroy
+                                              welcome GET    /welcome/index(.:format)                                                welcome#index
+                                       wizard_welcome GET    /welcome/wizard(.:format)                                               welcome#wizard
+                                   wizard_bar_welcome GET    /welcome/wizard_bar(.:format)                                           welcome#wizard_bar
+                               generate_mock_resource GET    /portal/generate_mock_resource(.:format)                                portal#generate_mock_resource
+                                 welcome_portal_basic GET    /welcome/portal_basic(.:format)                                         welcome#portal_basic
+                                                 asdf GET    /welcome/portal_basic(.:format)                                         welcome#portal_basic
+                              free_retirement_checkup GET    /portal/free_retirement_checkup(.:format)                               portal#free_retirement_checkup
+                      select_a_financial_professional GET    /portal/select_a_financial_professional(.:format)                       portal#select_a_financial_professional
+                                        send_an_email GET    /portal/send_an_email(.:format)                                         portal#send_an_email
+                            send_an_email_to_employer GET    /portal/send_an_email_to_employer(.:format)                             portal#send_an_email_to_employer
+                      register_for_my401k_plan_portal GET    /portal/register_for_my401k_plan_portal(.:format)                       portal#register_for_my401k_plan_portal
+                             enter_my401k_plan_portal GET    /portal/enter_my401k_plan_portal(.:format)                              portal#enter_my401k_plan_portal
+                                 enter_e_money_portal GET    /portal/enter_e_money_portal(.:format)                                  portal#enter_e_money_portal
+                  better_organize_your_financial_life GET    /portal/better_organize_your_financial_life(.:format)                   portal#better_organize_your_financial_life
+         better_organize_your_financial_life_security GET    /portal/better_organize_your_financial_life_security(.:format)          portal#better_organize_your_financial_life_security
+       better_organize_your_financial_life_test_drive GET    /portal/better_organize_your_financial_life_test_drive(.:format)        portal#better_organize_your_financial_life_test_drive
+            better_organize_your_financial_life_video GET    /portal/better_organize_your_financial_life_video(.:format)             portal#better_organize_your_financial_life_video
+                            log_in_for_existing_users GET    /portal/log_in_for_existing_users(.:format)                             portal#log_in_for_existing_users
+                                   fast_start_support GET    /portal/fast_start_support(.:format)                                    portal#fast_start_support
+                             log_in_to_access_e_money GET    /portal/log_in_to_access_e_money(.:format)                              portal#log_in_to_access_e_money
+                              resource_center_content GET    /portal/resource_center_content(.:format)                               portal#resource_center_content
+                              resource_center_welcome GET    /portal/resource_center_welcome(.:format)                               portal#resource_center_welcome
+                                  resource_center_all GET    /portal/resource_center_all(.:format)                                   portal#resource_center_all
+                                 resource_center_item GET    /portal/resource_center_item(.:format)                                  portal#resource_center_item
+                                general_advertisement GET    /portal/general_advertisement(.:format)                                 portal#general_advertisement
+                  watch_plan_participant_portal_video GET    /portal/watch_plan_participant_portal_video(.:format)                   portal#watch_plan_participant_portal_video
+                           view_triple_play_directory GET    /portal/view_triple_play_directory(.:format)                            portal#view_triple_play_directory
+                             portal_plan_participants GET    /portal/plan_participants(.:format)                                     welcome#portal_basic
+                              become_a_premium_member GET    /portal/become_a_premium_member(.:format)                               portal#become_a_premium_member
+                              resource_center_welcome GET    /portal/resource_center_welcome(.:format)                               portal#resource_center_welcome
+                              personal_portal_welcome GET    /portal/personal_portal_welcome(.:format)                               portal#personal_portal_welcome
+                      register_for_premium_membership GET    /portal/register_for_premium_membership(.:format)                       portal#register_for_premium_membership
+     read_terms_and_conditions_for_premium_membership GET    /portal/read_terms_and_conditions_for_premium_membership(.:format)      portal#read_terms_and_conditions_for_premium_membership
+          read_terms_and_conditions_for_my401k_portal GET    /portal/read_terms_and_conditions_for_my401k_portal(.:format)           portal#read_terms_and_conditions_for_my401k_portal
+read_terms_and_conditions_for_free_retirement_checkup GET    /portal/read_terms_and_conditions_for_free_retirement_checkup(.:format) portal#read_terms_and_conditions_for_free_retirement_checkup
+             see_more_info_for_financial_professional GET    /portal/see_more_info_for_financial_professional(.:format)              portal#see_more_info_for_financial_professional
+                  view_adv_for_financial_professional GET    /portal/view_adv_for_financial_professional(.:format)                   portal#view_adv_for_financial_professional
+              view_reviews_for_financial_professional GET    /portal/view_reviews_for_financial_professional(.:format)               portal#view_reviews_for_financial_professional
+                    my_retirement_plan_sponsor_portal GET    /portal/my_retirement_plan_sponsor_portal(.:format)                     portal#my_retirement_plan_sponsor_portal
+                lets_go_retirement_readiness_epidemic GET    /portal/lets_go_retirement_readiness_epidemic(.:format)                 portal#lets_go_retirement_readiness_epidemic
+            watch_retirement_readiness_epidemic_video GET    /portal/watch_retirement_readiness_epidemic_video(.:format)             portal#watch_retirement_readiness_epidemic_video
+                                       my_401k_log_in GET    /portal/my_401k_log_in(.:format)                                        portal#my_401k_log_in
+                                     my_401k_register GET    /portal/my_401k_register(.:format)                                      portal#my_401k_register
+                                         my_401k_help GET    /portal/my_401k_help(.:format)                                          portal#my_401k_help
+                             lets_go_fiduciary_market GET    /portal/lets_go_fiduciary_market(.:format)                              portal#lets_go_fiduciary_market
+                           fiduciary_market_providers GET    /portal/fiduciary_market_providers(.:format)                            portal#fiduciary_market_providers
+                       zero_cost_service_download_pdf GET    /portal/zero_cost_service_download_pdf(.:format)                        portal#zero_cost_service_download_pdf
+                               concierge_plan_sponsor GET    /portal/concierge_plan_sponsor(.:format)                                portal#concierge_plan_sponsor
+                           advertisement_plan_sponsor GET    /portal/advertisement_plan_sponsor(.:format)                            portal#advertisement_plan_sponsor
+                enter_my401k_plan_portal_plan_sponsor GET    /portal/enter_my401k_plan_portal_plan_sponsor(.:format)                 portal#enter_my401k_plan_portal_plan_sponsor
+         register_for_my401k_plan_portal_plan_sponsor GET    /portal/register_for_my401k_plan_portal_plan_sponsor(.:format)          portal#register_for_my401k_plan_portal_plan_sponsor
+           my_retirement_plan_service_provider_portal GET    /portal/my_retirement_plan_service_provider_portal(.:format)            portal#my_retirement_plan_service_provider_portal
+                           lets_go_improve_visibility GET    /portal/lets_go_improve_visibility(.:format)                            portal#lets_go_improve_visibility
+                       watch_improve_visibility_video GET    /portal/watch_improve_visibility_video(.:format)                        portal#watch_improve_visibility_video
+                              fiduciary_market_log_in GET    /portal/fiduciary_market_log_in(.:format)                               portal#fiduciary_market_log_in
+                            fiduciary_market_register GET    /portal/fiduciary_market_register(.:format)                             portal#fiduciary_market_register
+                                fiduciary_market_help GET    /portal/fiduciary_market_help(.:format)                                 portal#fiduciary_market_help
+                        pricing_list_ads_download_pdf GET    /portal/pricing_list_ads_download_pdf(.:format)                         portal#pricing_list_ads_download_pdf
+                                     free_advertising GET    /portal/free_advertising(.:format)                                      portal#free_advertising
+        log_in_fiduciary_market_plan_service_provider GET    /portal/log_in_fiduciary_market_plan_service_provider(.:format)         portal#log_in_fiduciary_market_plan_service_provider
+                               enter_fiduciary_market GET    /portal/enter_fiduciary_market(.:format)                                portal#enter_fiduciary_market
+                                          my401k_help GET    /portal/my401k_help(.:format)                                           portal#my401k_help
+                                   portal_sticky_note POST   /portal/sticky_note(.:format)                                           portal#sticky_note
+                                     new_user_session GET    /users/sign_in(.:format)                                                devise/sessions#new
+                                         user_session POST   /users/sign_in(.:format)                                                devise/sessions#create
+                                 destroy_user_session DELETE /users/sign_out(.:format)                                               devise/sessions#destroy
+                                        user_password POST   /users/password(.:format)                                               devise/passwords#create
+                                    new_user_password GET    /users/password/new(.:format)                                           devise/passwords#new
+                                   edit_user_password GET    /users/password/edit(.:format)                                          devise/passwords#edit
+                                                      PUT    /users/password(.:format)                                               devise/passwords#update
+                             cancel_user_registration GET    /users/cancel(.:format)                                                 devise/registrations#cancel
+                                    user_registration POST   /users(.:format)                                                        devise/registrations#create
+                                new_user_registration GET    /users/sign_up(.:format)                                                devise/registrations#new
+                               edit_user_registration GET    /users/edit(.:format)                                                   devise/registrations#edit
+                                                      PUT    /users(.:format)                                                        devise/registrations#update
+                                                      DELETE /users(.:format)                                                        devise/registrations#destroy
+                                                 root        /                                                                       welcome#index

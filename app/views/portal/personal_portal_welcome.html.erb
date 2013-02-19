@@ -1,0 +1,23 @@
+<style type="text/css">
+#resource-target-decl{ }
+</style>
+
+<ul class="hotspot-enabled" data-title="personal-portal-welcome">
+  <%= image_tag "/assets/mock/personal-portal-welcome.png" %>
+
+  <li data-id="asdf" data-mode="new" data-dark-border="true">
+    <%= asdf_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+get "portal/personal_portal_welcome", as: :personal_portal_welcome
+get "portal/asdf", as: :asdf
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/personal_portal_welcome.html.erb ./app/views/portal/asdf.html.erb
+%>
+

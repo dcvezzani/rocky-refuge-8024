@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Controller:</b>
+  <%= @sticky_note.controller %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @sticky_note.action %>
+</p>
+
+<p>
+  <b>Background color:</b>
+  <%= @sticky_note.background_color %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @sticky_note.height %>
+</p>
+
+<p>
+  <b>Left:</b>
+  <%= @sticky_note.left %>
+</p>
+
+<p>
+  <b>Top:</b>
+  <%= @sticky_note.top %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @sticky_note.width %>
+</p>
+
+<p>
+  <b>Z index:</b>
+  <%= @sticky_note.z_index %>
+</p>
+
+
+<%= link_to 'Edit', edit_sticky_note_path(@sticky_note) %> |
+<%= link_to 'Back', sticky_notes_path %>

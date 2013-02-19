@@ -1,0 +1,29 @@
+<style type="text/css">
+#terms-and-conditions{ position: absolute; left: 604px; top: 476px; width: 352px; height: 40px; }
+#request-initial-interview{ position: absolute; left: 825px; top: 538px; width: 132px; height: 62px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="schedule-your-initial-interview">
+  <%= image_tag "/assets/mock/schedule-your-initial-interview.png" %>
+
+  <li data-id="request-initial-interview" data-mode="active" data-dark-border="true">
+    <%= send_an_email_path %>
+  </li>
+
+  <li data-id="terms-and-conditions" data-mode="active" data-dark-border="true">
+    <%= read_terms_and_conditions_for_free_retirement_checkup_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/schedule_your_initial_interview", as: :schedule_your_initial_interview
+  get "portal/request_initial_interview", as: :request_initial_interview
+  get "portal/terms_and_conditions", as: :terms_and_conditions
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/schedule_your_initial_interview.html.erb ./app/views/portal/request_initial_interview.html.erb ./app/views/portal/terms_and_conditions.html.erb
+%>
+

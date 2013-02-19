@@ -1,0 +1,42 @@
+  .hotspot{
+    border: 1px dashed yellow;
+    opacity: 0.5;
+  }
+
+  .hotspot-dark{
+    border: 1px dashed blue;
+  }
+  
+  .new-hotspots .hotspot{
+    background-color: yellow; 
+  }
+
+  .new-hotspots div{
+    position: absolute; 
+    z-index: 1000;
+  }
+  .new-hotspot{
+    height: 4em;
+    width: 150px;
+    z-index: 2000;
+  }
+
+  .active-hotspots div a{
+    display: none; 
+  }
+  .active-hotspots.active-hotspots-hoverable div:hover{
+  }
+  .active-hotspots.active-hotspots-hoverable div:hover{
+    cursor: pointer;
+  }
+
+  .hotspot-zone{
+    position: relative; 
+  }
+ 
+  .hotspot-zone .cs-ribbon{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    z-index: 1;
+  }

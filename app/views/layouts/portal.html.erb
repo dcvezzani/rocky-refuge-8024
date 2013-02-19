@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Retirement Made Easy</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+
+<div id="page-outer-wrapper">
+  <div id="page">
+
+    <div class="header">
+      <h3>My Retirement Made Easy</h3>
+      <ul class="audiences">
+        <li>Plan Participants</li>
+        <li>Plan Sponsors</li>
+        <li>Plan Service Providers</li>
+      </ul>
+    </div>
+
+    <%= yield %>   
+
+  </div>
+</div>
+  
+</body>
+</html>

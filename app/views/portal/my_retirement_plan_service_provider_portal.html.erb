@@ -1,0 +1,59 @@
+<style type="text/css">
+#pricing-list-ads-download-pdf{ position: absolute; left: 868px; top: 558px; width: 54px; height: 20px; }
+#fiduciary-market-help{ position: absolute; left: 493px; top: 620px; width: 46px; height: 20px; }
+#fiduciary-market-register{ position: absolute; left: 388px; top: 619px; width: 97px; height: 20px; }
+#fiduciary-market-log-in{ position: absolute; left: 385px; top: 528px; width: 153px; height: 75px; }
+#watch-improve-visibility-video{ position: absolute; left: 345px; top: 38px; width: 360px; height: 223px; }
+#lets-go-improve-visibility{ position: absolute; left: 51px; top: 284px; width: 146px; height: 56px; }
+#free-advertising{ position: absolute; left: 924px; top: 186px; width: 97px; height: 20px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="my-retirement-plan-service-provider-portal">
+  <%= image_tag "/assets/mock/my-retirement-plan-service-provider-portal.png" %>
+
+  <li data-id="lets-go-improve-visibility" data-mode="active" data-dark-border="true">
+    <%= lets_go_improve_visibility_path %>
+  </li>
+
+  <li data-id="watch-improve-visibility-video" data-mode="active" data-dark-border="true">
+    <%= watch_improve_visibility_video_path %>
+  </li>
+
+  <li data-id="fiduciary-market-log-in" data-mode="active" data-dark-border="true">
+    <%= fiduciary_market_log_in_path %>
+  </li>
+
+  <li data-id="fiduciary-market-register" data-mode="active" data-dark-border="true">
+    <%= fiduciary_market_register_path %>
+  </li>
+
+  <li data-id="fiduciary-market-help" data-mode="active" data-dark-border="true">
+    <%= fiduciary_market_help_path %>
+  </li>
+
+  <li data-id="pricing-list-ads-download-pdf" data-mode="active" data-dark-border="true">
+    <%= pricing_list_ads_download_pdf_path %>
+  </li>
+
+  <li data-id="free-advertising" data-mode="active" data-dark-border="false">
+    <%= free_advertising_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/my_retirement_plan_service_provider_portal", as: :my_retirement_plan_service_provider_portal
+  get "portal/lets_go_improve_visibility", as: :lets_go_improve_visibility
+  get "portal/watch_improve_visibility_video", as: :watch_improve_visibility_video
+  get "portal/fiduciary_market_log_in", as: :fiduciary_market_log_in
+  get "portal/fiduciary_market_register", as: :fiduciary_market_register
+  get "portal/fiduciary_market_help", as: :fiduciary_market_help
+  get "portal/pricing_list_ads_download_pdf", as: :pricing_list_ads_download_pdf
+  get "portal/free_advertising", as: :free_advertising
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/my_retirement_plan_service_provider_portal.html.erb ./app/views/portal/lets_go_improve_visibility.html.erb ./app/views/portal/watch_improve_visibility_video.html.erb ./app/views/portal/fiduciary_market_log_in.html.erb ./app/views/portal/fiduciary_market_register.html.erb ./app/views/portal/fiduciary_market_help.html.erb ./app/views/portal/pricing_list_ads_download_pdf.html.erb ./app/views/portal/free_advertising.html.erb
+%>
+

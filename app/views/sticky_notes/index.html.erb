@@ -1,0 +1,36 @@
+<h1>Listing sticky_notes</h1>
+
+<% attrs = %w{note referrer_url} %>
+
+<ul class="sticky-note-filters">
+  <li><%= link_to 'Missing referrer_url', sticky_notes_path(filter_missing_referrer_url: true) %></li>
+  <li><%= link_to 'Clear filters', sticky_notes_path %></li>
+  <li><%= link_to 'Group by referrer_url', sticky_notes_by_referrer_url_path %></li>
+</ul>
+
+<table>
+  <tr>
+    <% attrs.each do |attr| %>
+      <th><%= attr.capitalize %></th>
+    <% end %>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sticky_notes.each do |sticky_note| %>
+  <tr>
+    <% attrs.each do |attr| %>
+      <td><%= raw(sticky_note.send(attr)) %></td>
+    <% end %>
+    <td><%= link_to 'Show', sticky_note %></td>
+    <td><%= link_to 'Edit', edit_sticky_note_path(sticky_note) %></td>
+    <td><%= link_to 'Destroy', sticky_note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sticky note', new_sticky_note_path %>

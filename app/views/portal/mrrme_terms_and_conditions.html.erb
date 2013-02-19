@@ -1,0 +1,23 @@
+<style type="text/css">
+#resource-target-decl{ }
+</style>
+
+<ul class="hotspot-enabled" data-title="mrrme-terms-and-conditions">
+  <%= image_tag "/assets/mock/mrrme-terms-and-conditions.png" %>
+
+  <li data-id="hotspot-placeholder" data-mode="new" data-dark-border="false">
+    <%= hotspot_placeholder_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/mrrme_terms_and_conditions", as: :mrrme_terms_and_conditions
+  get "portal/hotspot_placeholder", as: :hotspot_placeholder
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/mrrme_terms_and_conditions.html.erb ./app/views/portal/hotspot_placeholder.html.erb
+%>
+

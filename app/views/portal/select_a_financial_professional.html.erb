@@ -1,0 +1,40 @@
+<style type="text/css">
+#view-reviews-for-financial-professional{ position: absolute; left: 847px; top: 436px; width: 150px; height: 21px; }
+#see-more-info-for-financial-professional{ position: absolute; left: 45px; top: 183px; width: 147px; height: 186px; }
+#view-adv-for-financial-professional{ position: absolute; left: 847px; top: 406px; width: 150px; height: 21px; }
+#select-a-financial-professional{ position: absolute; left: 838px; top: 516px; width: 165px; height: 41px; }
+</style>
+
+<ul class="hotspot-enabled" data-title="select-a-financial-professional">
+  <%= image_tag "/assets/mock/select-a-financial-professional.png" %>
+
+  <li data-id="select-a-financial-professional" data-mode="active" data-dark-border="true">
+    <%= free_retirement_checkup_path %>
+  </li>
+
+  <li data-id="see-more-info-for-financial-professional" data-mode="active" data-dark-border="true">
+    <%= see_more_info_for_financial_professional_path %>
+  </li>
+
+  <li data-id="view-reviews-for-financial-professional" data-mode="active" data-dark-border="true">
+    <%= view_reviews_for_financial_professional_path %>
+  </li>
+
+  <li data-id="view-adv-for-financial-professional" data-mode="active" data-dark-border="true">
+    <%= view_adv_for_financial_professional_path %>
+  </li>
+</ul>
+
+<%# 
+Target Routes
+  get "portal/select_a_financial_professional", as: :select_a_financial_professional
+  get "portal/see_more_info_for_financial_professional", as: :see_more_info_for_financial_professional
+  get "portal/view_adv_for_financial_professional", as: :view_adv_for_financial_professional
+  get "portal/view_reviews_for_financial_professional", as: :view_reviews_for_financial_professional
+%>
+
+<%# 
+Target Files
+mvim -p ./app/views/portal/select_a_financial_professional.html.erb ./app/views/portal/see_more_info_for_financial_professional.html.erb ./app/views/portal/view_adv_for_financial_professional.html.erb ./app/views/portal/view_reviews_for_financial_professional.html.erb ./app/views/portal/.html.erb
+%>
+
