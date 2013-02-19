@@ -7,7 +7,8 @@ Clf004::Application.routes.draw do
   get "welcome/wizard_bar", as: :wizard_bar_welcome
   get "portal/generate_mock_resource", as: :generate_mock_resource
 
-  get "welcome/portal_basic", controller: :portal
+  get "welcome/portal_basic"
+  get "welcome/mock_portal_basic"
   get "welcome/portal_basic", controller: :portal, as: :asdf
   get "welcome/portal_basic", controller: :portal, as: :hotspot_placeholder
   get "portal/free_retirement_checkup", as: :free_retirement_checkup

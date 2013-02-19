@@ -1,5 +1,5 @@
 class PortalController < ActionController::Base
-  layout "portal"
+  layout "mock_portal"
   #before_filter :authenticate_user!, except: [:index]
 
   def sticky_note

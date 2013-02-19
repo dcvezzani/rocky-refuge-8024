@@ -8,6 +8,9 @@ class WelcomeController < ApplicationController
   end
 
   def portal_basic
-    render layout: "portal"
+  end
+
+  def mock_portal_basic
+    render layout: "mock_portal"
   end
 end
