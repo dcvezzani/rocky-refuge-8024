@@ -10,9 +10,9 @@
  *
  *= require_self
  *= require_tree ./portal_assets
- *= require_tree ./MikeCSS
- *= require ../bootstrap/css/bootstrap
- *= require ../bootstrap/css/bootstrap-responsive
+ * require ../bootstrap/css/bootstrap
+ * require ../bootstrap/css/bootstrap-responsive
+ *= require ./MikeCSS/custom.css
  *= require ../bootstrap_wizard/prettify
  *= require ../jquery.ui.theme.lightness/css/ui-lightness/jquery-ui-1.8.22.custom
  *= require ../sticky_notes/css/stickyNote
