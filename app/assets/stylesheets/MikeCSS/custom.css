@@ -1,11 +1,13 @@
 @import url("bootstrap.min.css");
 
 body {
-  margin-top: 2em;
+  background: #555;
+  margin-top: 1em;
 }
 
 .container {
   background: #555;
+  padding: 0 20px;
 }
 
 .mrrme {
@@ -13,25 +15,28 @@ body {
 }
 
 .orange {
-  background: orange;
+  background: rgb(135, 162, 81);
 }
 
 .blue {
-  background: blue;
+  background: rgb(23, 54, 94);
+  margin: 20px 0 20px 20px;
 }
 
 .purple {
-  background: purple;
+  background: rgb(204, 193, 219);
+  margin: 20px 0 20px 20px;
 }
 
 .red {
-  background: red;
+  background: rgb(150, 55, 50);
 }
 
 .green {
   background: green;
+  margin: 20px 0 20px 20px;
 }
 
 .yellow {
-  background: yellow;
+  background: rgb(77, 128, 192);
 }
