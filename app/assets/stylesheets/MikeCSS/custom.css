@@ -14,29 +14,124 @@ body {
   color:#DDD;
 }
 
-.orange {
+/* Main Block */
+
+.lightGreen {
   background: rgb(135, 162, 81);
 }
 
+#catch {
+  width: 225px;
+  padding-left: 10px;
+}
+
+#picture1 {
+  width: 395px;
+  margin-top: 10px;
+}
+
+.lightGreen hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#letsGo {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+#ourMission h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* 401k portal entrance */
+
 .blue {
+  color: #DDD;
   background: rgb(23, 54, 94);
   margin: 20px 0 20px 20px;
 }
+
+.blue h3, .blue p {
+  padding-left: 10px;
+}
+
+.blue .btn {
+  margin-left: 35px;
+  margin-top: 55px;
+}
+
+.blue img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Personal Financial Portal */
 
 .purple {
   background: rgb(204, 193, 219);
   margin: 20px 0 20px 20px;
 }
 
+.purple h3, .purple p {
+  padding-left: 10px;
+}
+
+.purple ul {
+  margin: 10px 0 17px 20px;
+}
+
+.purple img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Triple-Play Directory */
+
 .red {
   background: rgb(150, 55, 50);
 }
+
+.red h3, .red p {
+  margin-left: 10px;
+}
+
+.red .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Advertiser Frame */
 
 .green {
   background: green;
   margin: 20px 0 20px 20px;
 }
 
-.yellow {
+/* Resource Center */
+
+.lightBlue {
   background: rgb(77, 128, 192);
+}
+
+.lightBlue h3, .lightBlue p {
+  margin-left: 10px;
+}
+
+.lightBlue .btn1 {
+  font-size: .81em;
+  margin: 20px 10px 30px 10px;
+}
+
+.lightBlue .btn2 {
+  font-size: .93em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.lightBlue img {
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
