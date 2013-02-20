@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree ./portal_assets
+ *= require_tree ./MikeCSS
  *= require ../bootstrap/css/bootstrap
  *= require ../bootstrap/css/bootstrap-responsive
  *= require ../bootstrap_wizard/prettify

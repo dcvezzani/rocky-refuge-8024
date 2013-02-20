@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My Retirement Made Easy</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>My Retirement Resources Made Easy | Plan Participant Home</title>\
+  <%= stylesheet_link_tag    "portal", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-
-  <style type="text/css">
-  </style>
 </head>
-
 <body>
-
-<div id="page-outer-wrapper">
-  <div id="page">
-
-    <div class="header">
-      <h3>My Retirement Made Easy</h3>
-      <ul class="audiences">
-        <li>Plan Participants</li>
-        <li>Plan Sponsors</li>
-        <li>Plan Service Providers</li>
-      </ul>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <h2 class="mrrme">My Retirement Resources Made Easy</h2>
+            </div><!-- /.span8 -->
+            <div class="span6">
+                <ul class="nav nav-pills pull-right">
+                    <li><a href="#">Plan Participants</a></li>
+                    <li><a href="#">Plan Sponsors</a></li>
+                    <li><a href="#">Plan Service Providers</a></li>
+                </ul><!-- /.nav nav-pills pull-right-->
+            </div><!-- /.span8 -->
+        </div><!-- /.row -->
+        <hr>
 
     <%= yield %>   
 
   </div>
-</div>
-  
 </body>
 </html>
