@@ -1,28 +1,63 @@
 @import url("bootstrap.min.css");
 
 body {
-  background: #555;
+  background: #515151;
   margin-top: 1em;
 }
 
 .container {
-  background: #555;
+  background: #515151;
   padding: 0 20px;
 }
 
+.container hr {
+  margin-top: 0;
+}
+
 .mrrme {
+  font-size: 1.9em;
+  margin: 0;
   color:#DDD;
+}
+
+#ulFix {
+  margin-bottom: 10px;
 }
 
 /* Main Block */
 
 .lightGreen {
-  background: rgb(135, 162, 81);
+  background: #020;
+  background-image: url(/assets/bgs/graphy.png);
+  box-shadow: 5px 5px 15px #333;
 }
 
 #catch {
+  color: #FFF;
   width: 225px;
   padding-left: 10px;
+}
+
+#catch h3 {
+  font-family: 'Oxygen', sans-serif;
+  text-shadow: 0px 0px 5px #444;
+  font-weight: lighter;
+  font-size: 1.9em;
+}
+
+.transparent {
+  background-color: #666;
+  opacity: .7;
+  line-height: 15px;
+}
+
+.opaqueText {
+  color: #FFF;
+}
+
+#catch p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-shadow: 0px 0px 5px #444;
 }
 
 #picture1 {
@@ -31,19 +66,34 @@ body {
 }
 
 .lightGreen hr {
-  width: 90%;
+  width: 96.99%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 7px;
 }
 
 #letsGo {
   margin-top: 10px;
   margin-left: 40px;
+  text-align: left;
+}
+
+#ourMission {
+  text-shadow: 0 0 5px #444;
 }
 
 #ourMission h4 {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  color: #EEE;
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+#ourMission p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #EEE;
 }
 
 /* 401k portal entrance */
