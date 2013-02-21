@@ -35,6 +35,8 @@ body {
 /* Main Block */
 
 .lightGreen {
+  width: 640px;
+  padding: 10px;
   background: #020;
   background-image: url(/assets/bgs/graphy.png);
   box-shadow: 5px 5px 15px #1A1A1A;
@@ -42,9 +44,8 @@ body {
 }
 
 #catch {
+  width: 220px;
   color: #FFF;
-  width: 225px;
-  padding-left: 10px;
 }
 
 #catch h3 {
@@ -58,13 +59,11 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-shadow: 0px 0px 5px #444;
   font-size: 1.5em;
-  line-height: 1;
   font-weight: 100;
 }
 
 #picture1 {
-  width: 395px;
-  margin-top: 10px;
+  width: 400px;
   box-shadow: 0 0 5px #555;
 }
 
@@ -77,16 +76,12 @@ body {
 }
 
 .lightGreen hr {
-  width: 96.99%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7px;
   border-color: #EEE;
+  width: 640px;
+  margin: 10px 0;
 }
 
 #letsGo {
-  margin-top: 10px;
-  margin-left: 40px;
   text-align: left;
 }
 
@@ -100,108 +95,92 @@ body {
   font-weight: lighter;
   font-style: italic;
   font-size: 1.6em;
-  color: #EEE;
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 #ourMission p {
   text-shadow: 0 0 5px #444;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.4em;
-  color: #EEE;
 }
 
 /* 401k portal entrance */
 
 .blue {
+  margin-top: 20px;
+  width: 300px;
+  padding: 0 10px 10px 10px;
   color: #DDD;
   background: rgb(23, 54, 94);
-  margin: 20px 0 20px 20px;
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
 .blue h3, .blue p {
-  padding-left: 10px;
 }
 
 .blue .firstLine {
   font-weight: lighter;
   letter-spacing: 2px;
-  margin-bottom: 0;
 }
 
 .blue .secondLine {
-  margin-top: 0;
-  margin-bottom: 20px;
-  line-height: .9em;
   text-align: right;
-  padding-left: 0;
-  padding-right: 10px;
 }
 
 .blue .btn {
-  margin-left: 35px;
-  margin-top: 55px;
 }
 
 .blue img {
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 /* Personal Financial Portal */
 
 .purple {
+  margin-top: 20px;
+  width: 300px;
+  padding: 0 10px 10px 10px;
   background: rgb(204, 193, 219);
-  margin: 20px 0 20px 20px;
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
 .purple h3, .purple p {
-  padding-left: 10px;
 }
 
 .purple ul {
-  margin: 10px 0 17px 20px;
 }
 
 .purple img {
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 /* Triple-Play Directory */
 
 .red {
+  width: 300px;
+  padding: 0 10px 10px 10px;
   background: rgb(150, 55, 50);
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
 .red h3 {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .red h3, .red p {
-  margin-left: 10px;
 }
 
 .red ol li {
   font-size: .9em;
-  line-height: 1.2;
 }
 
 .red .btn {
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 /* Advertiser Frame */
 
 .green {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  padding: 0 10px 10px 10px;
   background: green;
-  margin: 20px 0 20px 20px;
   box-shadow: 5px 5px 15px #1A1A1A;
   min-height: 197px;
 }
@@ -209,6 +188,8 @@ body {
 /* Resource Center */
 
 .lightBlue {
+  width: 300px;
+  padding: 0 10px 10px 10px;
   background: rgb(77, 128, 192);
   box-shadow: 5px 5px 15px #1A1A1A;
 }
@@ -217,26 +198,17 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 100;
   font-size: 2.2em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .lightBlue h3, .lightBlue p {
-  margin-left: 10px;
 }
 
 .lightBlue .btn1 {
   font-size: .81em;
-  margin: 20px 10px 30px 10px;
 }
 
 .lightBlue .btn2 {
   font-size: .93em;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .lightBlue img {
-  margin-left: 10px;
-  margin-bottom: 10px;
 }
