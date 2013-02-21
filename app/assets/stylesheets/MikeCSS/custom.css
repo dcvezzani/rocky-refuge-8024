@@ -4,7 +4,7 @@
 
 body {
   background: #515151;
-  margin-top: 1em;
+  margin: 1em 0 2em 0;
 }
 
 .container {
@@ -28,17 +28,18 @@ body {
   color:#DDD;
 }
 
-#ulFix {
-  margin-bottom: 10px;
+*.h3 {
+  margin-top: 0;
 }
 
 /* Main Block */
 
 .lightGreen {
   width: 640px;
+  height: 330px; /* THERE IS SOMETHING GOING ON HERE THAT NEEDS ATTENTION */
   padding: 10px;
-  background: #020;
-  background-image: url(/assets/bgs/graphy.png);
+  background-image: url(/assets/real/background.png);
+  background-repeat: repeat-x;
   box-shadow: 5px 5px 15px #1A1A1A;
   min-height: 315px;
 }
@@ -108,25 +109,29 @@ body {
 .blue {
   margin-top: 20px;
   width: 300px;
-  padding: 0 10px 10px 10px;
+  padding: 10px;
   color: #DDD;
   background: rgb(23, 54, 94);
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
-.blue h3, .blue p {
-}
-
 .blue .firstLine {
+  margin: 0;
   font-weight: lighter;
   letter-spacing: 2px;
 }
 
 .blue .secondLine {
+  margin: 0 0 15px 0;
   text-align: right;
 }
 
+.blue p {
+  margin: 0 0 15px 0;
+}
+
 .blue .btn {
+  margin: 45px 0 0 30px;
 }
 
 .blue img {
@@ -137,18 +142,37 @@ body {
 .purple {
   margin-top: 20px;
   width: 300px;
-  padding: 0 10px 10px 10px;
-  background: rgb(204, 193, 219);
+  padding: 10px;
+  background: #FFFEFE;
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
-.purple h3, .purple p {
+.purple .first {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.purple .second {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: lighter;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0 0 19px 0;
+}
+
+.purple p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5em;
 }
 
 .purple ul {
+  margin-top: 3px;
+  margin-bottom: 0;
 }
 
 .purple img {
+  margin-top: 50px;
 }
 
 /* Triple-Play Directory */
@@ -156,18 +180,27 @@ body {
 .red {
   width: 300px;
   padding: 0 10px 10px 10px;
-  background: rgb(150, 55, 50);
+  background: #88212F;
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
 .red h3 {
+  color: #FFF;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.red h3, .red p {
+
+.red p {
+  color: #EEE;
 }
 
 .red ol li {
+  color: #EEE;
   font-size: .9em;
+  line-height: 1.23;
 }
 
 .red .btn {
@@ -179,35 +212,52 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 300px;
-  padding: 0 10px 10px 10px;
-  background: green;
+  padding: 10px 10px 10px 10px;
+  background: #577600;
   box-shadow: 5px 5px 15px #1A1A1A;
-  min-height: 197px;
+  min-height: 150px;
+}
+
+.green p {
+  margin-bottom: 0;
+  color: #DDD;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  padding: 5px 0;
+  background: #555;
 }
 
 /* Resource Center */
 
 .lightBlue {
   width: 300px;
-  padding: 0 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   background: rgb(77, 128, 192);
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
 .lightBlue h3 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: 'Fjalla One', sans-serif;
   font-weight: 100;
   font-size: 2.2em;
-
+}
+  
 .lightBlue h3, .lightBlue p {
+  color: #EEE;
 }
 
 .lightBlue .btn1 {
   font-size: .81em;
+  margin: 20px 0 20px 14px;
 }
 
 .lightBlue .btn2 {
   font-size: .93em;
+  margin: 0 0 0 14px;
 }
 
 .lightBlue img {
