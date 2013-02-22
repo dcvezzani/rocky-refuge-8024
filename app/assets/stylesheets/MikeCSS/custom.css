@@ -120,7 +120,7 @@ body {
 
 .blue .firstLine {
   margin: 0;
-  font-weight: lighter;
+  font-weight: 100;
   letter-spacing: 2px;
   text-shadow: 3px 3px 1px #000;
 }
