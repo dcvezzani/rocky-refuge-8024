@@ -1,4 +1,4 @@
-@import url("bootstrap.min.css");
+@import url("bootstrap3.min.css");
 
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One|La+Belle+Aurore|Oxygen|Yanone+Kaffeesatz);
 
@@ -18,6 +18,7 @@ body {
 }
 
 .container hr {
+  width: 984px;
   margin-top: 0;
   border-color: #BBB;
 }
@@ -64,6 +65,7 @@ body {
 }
 
 #picture1 {
+  margin: 0 0 0 20px;
   width: 400px;
   box-shadow: 0 0 5px #555;
 }
@@ -84,6 +86,7 @@ body {
 
 #letsGo {
   text-align: left;
+  box-shadow: 1px 1px 3px #444;
 }
 
 #ourMission {
@@ -104,14 +107,14 @@ body {
   font-size: 1.4em;
 }
 
-/* 401k portal entrance */
+/* 401k portal entrance *//* 401k portal entrance *//* 401k portal entrance *//* 401k portal entrance *//* 401k portal entrance *//* 401k portal entrance */
 
 .blue {
-  margin-top: 20px;
-  width: 300px;
+  margin-top: 8px;
+  width: 306px;
   padding: 10px;
   color: #DDD;
-  background: rgb(23, 54, 94);
+  background: #35547C;
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
@@ -119,51 +122,61 @@ body {
   margin: 0;
   font-weight: lighter;
   letter-spacing: 2px;
+  text-shadow: 3px 3px 1px #000;
 }
 
 .blue .secondLine {
-  margin: 0 0 15px 0;
+  margin: 0 0 3px 0;
   text-align: right;
+  text-shadow: 0px 0px 2px #000;
 }
 
 .blue p {
   margin: 0 0 15px 0;
+  text-shadow: 0px 0px 2px #000;
 }
 
 .blue .btn {
   margin: 45px 0 0 30px;
+  box-shadow: 1px 1px 3px #111;
 }
 
 .blue img {
+  box-shadow: 0 0 6px #111;
 }
 
-/* Personal Financial Portal */
+/* Personal Financial Portal *//* Personal Financial Portal *//* Personal Financial Portal *//* Personal Financial Portal *//* Personal Financial Portal */
 
 .purple {
-  margin-top: 20px;
-  width: 300px;
+  margin-top: 8px;
+  width: 306px;
   padding: 10px;
-  background: #FFFEFE;
+  background: #EEEDED;
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
 .purple .first {
   font-family: 'Oxygen', sans-serif;
   font-weight: lighter;
+  text-align: center;
   margin: 0;
 }
 
 .purple .second {
+  color: #FFFFFF;
+  text-shadow: 0 0 8px #000;
   font-family: 'Oxygen', sans-serif;
   font-weight: lighter;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 1;
+  text-align: center;
   margin: 0 0 19px 0;
 }
 
 .purple p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.5em;
+  margin-bottom: 13px;
 }
 
 .purple ul {
@@ -171,15 +184,36 @@ body {
   margin-bottom: 0;
 }
 
-.purple img {
-  margin-top: 50px;
+.purple .nav > li > a:hover, .purple .nav > li > a:focus {
+  background: #88212F;
 }
 
-/* Triple-Play Directory */
+.purple ul li a {
+  color: #88212F;
+  padding: 6px 10px;
+}
+
+.purple ul li a:hover {
+  color: #EEEDED;
+}
+
+.purple img {
+  margin-top: 46px;
+}
+
+/* Begin Aside *//* Begin Aside *//* Begin Aside *//* Begin Aside *//* Begin Aside *//* Begin Aside *//* Begin Aside *//* Begin Aside *//* Begin Aside */
+
+#aside {
+  margin: 0;
+}
+
+
+
+/* Triple-Play Directory *//* Triple-Play Directory *//* Triple-Play Directory *//* Triple-Play Directory */
 
 .red {
   width: 300px;
-  padding: 0 10px 10px 10px;
+  padding: 10px;
   background: #88212F;
   box-shadow: 5px 5px 15px #1A1A1A;
 }
@@ -190,6 +224,7 @@ body {
   letter-spacing: 2px;
   margin-top: 0;
   margin-bottom: 0;
+  text-shadow: 3px 3px 1px #000;
 }
 
 
@@ -204,15 +239,16 @@ body {
 }
 
 .red .btn {
+  box-shadow: 1px 1px 3px #222;
 }
 
-/* Advertiser Frame */
+/* Advertiser Frame *//* Advertiser Frame *//* Advertiser Frame *//* Advertiser Frame *//* Advertiser Frame */
 
 .green {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   width: 300px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   background: #577600;
   box-shadow: 5px 5px 15px #1A1A1A;
   min-height: 150px;
@@ -229,12 +265,13 @@ body {
   background: #555;
 }
 
-/* Resource Center */
+/* Resource Center *//* Resource Center *//* Resource Center *//* Resource Center *//* Resource Center */
 
 .lightBlue {
   width: 300px;
-  padding: 10px 10px 10px 10px;
-  background: rgb(77, 128, 192);
+  padding: 10px;
+  background: rgb(127, 178, 255);
+  background-image: url(/assets/bgs/brushed_alu_dark.png);
   box-shadow: 5px 5px 15px #1A1A1A;
 }
 
@@ -244,21 +281,33 @@ body {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 100;
   font-size: 2.2em;
+  line-height: 1;
+  text-shadow: 0px 0px 3px #000;
 }
   
 .lightBlue h3, .lightBlue p {
   color: #EEE;
 }
 
+.lightBlue p {
+  font-weight: 200;
+  margin-bottom: 9px;
+  font-size: 1.15em;
+  text-shadow: 0px 0px 2px #000;
+}
+
 .lightBlue .btn1 {
   font-size: .81em;
   margin: 20px 0 20px 14px;
+  box-shadow: 1px 1px 3px #444;
 }
 
 .lightBlue .btn2 {
   font-size: .93em;
   margin: 0 0 0 14px;
+  box-shadow: 1px 1px 3px #444;
 }
 
 .lightBlue img {
+  box-shadow: 0 0 5px #555;
 }
